@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase Dez Vezes na Tela</title>
+    <script>
+        function reproduzirFrase() {
+            var frase = document.getElementById('frase').value;
+            var resultado = '';
+            for (var i = 0; i < 10; i++) {
+                resultado += frase + '<br>';
+            }
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <h1>Reproduzir Frase</h1>
+    <input type="text" id="frase" placeholder="Escreva uma frase">
+    <button onclick="reproduzirFrase()">Reproduzir</button>
+    <div id="resultado"></div>
+</body>
+</html>
